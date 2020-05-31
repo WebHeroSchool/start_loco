@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+  	<!-- Кодировка документа -->
+    <meta charset="UTF-8">
+    <!-- Подключаем шрифты -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- Meta-тег для адаптивной верстки -->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Loco Project</title>
+    <!-- Подключаем css -->
+    <link rel="stylesheet" href="./style.css">
+    <!--Нормализация CSS-->
+    <link rel="stylesheet" href="css/normalize.css"> 
+  </head>
+  <!-- Отобр. тело веб-страницы -->
+  <body>
+    <div class="wrapper">
+      <input type="checkbox" id="check-menu">
+        <label for="check-menu">LOCO</label>
+          <div class="burger-line first"></div>
+          <div class="burger-line second"></div>
+  <!-- Первый слой стр -->
+    <section class="home">
+      <div class="home__wrap">
+      <div class="home__inner">
+      <div class="home__logo">LOCO</div>
+      <div class="container">
+        <nav class="main-menu">
+          <a href="#">RU</a>
+          <a href="#">ENG</a>
+        </nav>  
+      <div class="home__wrap-img"></div>
+        <img class="home__img-one" src="images/one-bag.png" alt="one bag">
+      </div>
+      </div>   
+      <div class="title">
+        <h1 class="title__header">НОВАЯ КОЛЛЕКЦИЯ</h1>
+         <p class="title__text">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+           <a class="btn__one" href="#">ЧИТАТЬ ДАЛЬШЕ</a>
+           <a class="btn__two" href="#">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>             
+      </div>
+      <ul class="social-icons">
+        <li><a href="http://www.instagram.com"><img src="images/INST.svg" /></a></li>
+        <li><a href="http://www.vk.com"><img src= "images/VK.svg" /></a></li>
+        <li><a href="http://www.facebook.com"><img src="images/FB.svg" /></a></li>
+      </ul>
+    </section>
+<!-- Второй слой стр -->
+    <section class="product">
+      <div class="product__wrap">
+        <div class="product__wrap-img">
+          <img class="product__img-grey" src="images/grey-bag.png" alt="Grey bag">
+          <img class="product__img-pink" src="images/pink-bag.png" alt="Pink bag">
+      </div>
+      <div class="container">
+        <div class="product__header">
+          <h1 class="product__title">Кожаный клатч</h1>
+          <h2 class="product__suptitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h2>
+          <p class="product__text">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+          <div class="product__buttons">
+            <div class="product__select-color">
+            <span class="select__item select__item_grey"></span>
+            <span class="select__item select__item_pink select__item_checked"></span>
+            <span class="select__item select__item_blue"></span>
+            <span class="select__item select__item_green"></span>
+          </div>
+          <span class="product__price">1990₽</span>
+          <div class="product__cart-form">
+            <div class="product__quantity">
+            <span class="quantity__less">-</span>
+            <span class="product__quantity-value">1</span>
+            <span class="quantity__more">+</span>
+         </div>
+         <button class="product__add">ДОБАВИТЬ В КОРЗИНУ</button>
+         <div class="product__link">
+           <a class="product__link-others link " href=# title="Посмотреть другие предложения">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+        </div>
+      </div>
+    </section>
+<!-- Третий слой стр -->
+    <section class="look">
+      <div class="product__wrap"></div>
+        <div class="product__wrap-img">
+          <div class="home__wrap-img"></div>
+          <img class="home__img-two" src="images/two-bag.png" alt="two bag">
+      <div class="container">    
+      <div class="look__header">
+        <h1 class="look__title">Serene Total Look</h1>
+        <h2 class="look__suptitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h2>
+        <p class="title__text">Джинсы, свитер, обувь.</p>
+        <p class="title__text">В комплект также входит пакет ароматного чая и кружка.</p>
+      <div class="look__cart-form">
+        <div class="look__quantity">
+        <span class="look__less">-</span>
+        <span class="look__quantity-value">1</span>
+        <span class="look__more">+</span>
+      </div>
+      <button class="look__add">ДОБАВИТЬ В КОРЗИНУ</button>
+        <div class="look__link">
+          <a class="look__link-others link " href=# title="Посмотреть другие предложения">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+        </div>
+      </div>
+      </div>
+      <footer class="look__created">
+        <p class="look__created-txt">РАЗРАБОТАНО В</p>
+        <img class="look__created-img" src="images/logo-whs.png" alt="created-by">
+      </footer>
+    </section>
+  </body>  
+</html>  
