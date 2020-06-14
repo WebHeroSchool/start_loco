@@ -4,11 +4,8 @@ body {
     margin: 0 auto;
     font-family: Montserrat, Arial, sans-serif;
 }
-.home__title__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 9px;
-    line-height: 13px;
-    color: #000;
-    opacity: .5;
+
+.header {
+	display: flex;
+	justify-content: space-between;
 }
