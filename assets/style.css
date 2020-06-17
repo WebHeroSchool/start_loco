@@ -7,6 +7,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: Montserrat, Arial, sans-serif;
+  color: red;
 }
 
 .header {
@@ -14,16 +15,13 @@ body {
   margin: 0 auto;
   width: 1440px;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  color: red;
 }
 
 .header__left-logo {
-  cursor: pointer;
-  display: flex;
-  height: 92px;
-  margin-right: 90px;
-  padding: 36px 52px 19px 52px;
-  width: 202px;
-  color: white;
+
 }
 
 .header__left-lang {
