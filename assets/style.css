@@ -7,31 +7,86 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: Montserrat, Arial, sans-serif;
-  color: red;
+  background-color: white;
+  }
+
+.header { 
+  font-size: 0;
+  height: 92px;
+  width: 100%;
+	font-family: Montserrat, sans-serif;
+  background-color: black;
+  width: 461px;
+  height: 900px;
 }
 
-.header {
-	font-family: Montserrat, sans-serif;
-  margin: 0 auto;
-  width: 1440px;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  color: red;
+.header__left {
+	display: flex;
+	justify-content: space-between;
 }
 
 .header__left-logo {
+	position: relative;
+	display: inline;
+  width: 98px;
+  height: 37px;
+  left: 52px;
+  top: 36px;
 
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
 }
 
-.header__left-lang {
+.header__left-lang {	
+	position: absolute;
+  display: inline;
+  width: 31px;
+  height: 25px;
+  left: 388px;
+  top: 42px;
 
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
 }
 
-.header__menu {
+/* нужно сделать бургер и вектор так же подключить адаптивное меню*/
 
+
+/* Первый слой */
+
+.home__img-one {
+  position: absolute;
+	width: 549px;
+	height: 562px;
+	left: 186px;
+	top: 169px;
+	background: url(images/one-bag.png);
 }
 
-.menu__burger-line {
+.home__title__header {
+	position: absolute;
+	width: 475px;
+  height: 164px;
+  left: 789px;
+  top: 263px;
 
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 82px;
+
+  color: black;
 }
+
