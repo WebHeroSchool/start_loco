@@ -10,15 +10,24 @@ body {
   background-color: white;
   }
 
+.main-page {
+  background: linear-gradient(to right, black 32%, white 10%);
+  padding-bottom: 27px;
+}
+
 .header { 
+  align-items: center;
+  display: flex;
+  font-size: 0;
+  height: 92px;
+  width: 100%;
+
   font-size: 0;
   height: 92px;
   width: 100%;
 	font-family: Montserrat, sans-serif;
-  background-color: black;
-  width: 461px;
-  height: 900px;
 }
+
 
 .header__left {
 	display: flex;
@@ -26,12 +35,13 @@ body {
 }
 
 .header__left-logo {
-	position: relative;
+  position: relative;
 	display: inline;
   width: 98px;
   height: 37px;
   left: 52px;
   top: 36px;
+  cursor: pointer;
 
   font-family: Montserrat;
   font-style: normal;
@@ -41,11 +51,11 @@ body {
 
   text-align: center;
   letter-spacing: 0.07em;
-  color: #FFFFFF;
+  color: white;
 }
 
 .header__left-lang {	
-	position: absolute;
+	position: relative;
   display: inline;
   width: 31px;
   height: 25px;
@@ -57,36 +67,71 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: white;
+  color: black;  
+  cursor: pointer;
 }
 
-/* нужно сделать бургер и вектор так же подключить адаптивное меню*/
+.header__left-lang {
+	height: 8px;
+  margin: 10px;
+  width: 16px;
+}
 
+.header-menu {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  height: 92px;
+  margin-left: 1348px;
+  position: absolute;
+  top: 0;
+  width: 92px;
+}
 
-/* Первый слой */
+.header-menu__line::before {
+  content: '';
+  transform: translateY(-11px);
+}
+
+.header-menu__line,
+.header-menu__line::before {
+  background: #000;
+  display: block;
+  height: 4px;
+  left: 50%;
+  margin-left: -18px;
+  position: absolute;
+  top: 53%;
+  width: 36.5px;
+}
+
+/*Первый слой*/
+
+.home {
+  display: flex;
+  padding-left: 186px;
+  padding-right: 120px;
+  padding-top: 77px;
+  width: 100%;
+}
 
 .home__img-one {
-  position: absolute;
-	width: 549px;
 	height: 562px;
-	left: 186px;
-	top: 169px;
-	background: url(images/one-bag.png);
+  margin-bottom: 68px;
+  margin-right: 55px;
+}
+
+.home__title {
+	flex-direction: column;
+  justify-content: center;
 }
 
 .home__title__header {
-	position: absolute;
-	width: 475px;
-  height: 164px;
-  left: 789px;
-  top: 263px;
-
+	display: flex;
+  font-size: 80px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 80px;
   line-height: 82px;
-
-  color: black;
+  margin-bottom: 17px;
+  margin-top: 102px;
 }
-
