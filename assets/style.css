@@ -21,10 +21,6 @@ body {
   font-size: 0;
   height: 92px;
   width: 100%;
-
-  font-size: 0;
-  height: 92px;
-  width: 100%;
 	font-family: Montserrat, sans-serif;
 }
 
@@ -32,23 +28,19 @@ body {
 .header__left {
 	display: flex;
 	justify-content: space-between;
-}
+} 
 
 .header__left-logo {
   position: relative;
-	display: inline;
+	display: flex;
   width: 98px;
   height: 37px;
-  left: 52px;
-  top: 36px;
+  margin-left: 52px;
+  margin-top: 36px;
   cursor: pointer;
-
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 37px;
-
   text-align: center;
   letter-spacing: 0.07em;
   color: white;
@@ -56,25 +48,20 @@ body {
 
 .header__left-lang {	
 	position: relative;
-  display: inline;
-  width: 31px;
-  height: 25px;
-  left: 388px;
-  top: 42px;
-
-  font-family: Montserrat;
-  font-style: normal;
+  display: flex;
+  left: 240px;
+  top: 36px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: black;  
+  text-align: right;
+  color: white;  
   cursor: pointer;
 }
 
 .header__left-lang {
 	height: 8px;
   margin: 10px;
-  width: 16px;
 }
 
 .header-menu {
@@ -135,3 +122,28 @@ body {
   margin-bottom: 17px;
   margin-top: 102px;
 }
+
+.home__title__text {
+  display: flex;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 38px;
+  margin-right: 64px;
+}
+
+.home__btn__one {
+
+}
+
+.home__btn__two {
+
+}
+
+
+.home__social-icons {
+ display: flex;
+}
+
