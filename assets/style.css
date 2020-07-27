@@ -3,19 +3,18 @@
 }
 
 body {
-  min-width: 375px;
-  max-width: 1440px;
   margin: 0 auto;
-  font-family: Montserrat, Arial, sans-serif;
-  background-color: white;
-  }
+  width: 1440px;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
 
 .main-page {
   background: linear-gradient(to right, black 32%, white 10%);
   padding-bottom: 27px;
 }
 
-.header { 
+.header {
   align-items: center;
   display: flex;
   font-size: 0;
@@ -23,7 +22,6 @@ body {
   width: 100%;
 	font-family: Montserrat, sans-serif;
 }
-
 
 .header__left {
 	display: flex;
@@ -62,6 +60,7 @@ body {
 .header__left-lang {
 	height: 8px;
   margin: 10px;
+  width: 16px;
 }
 
 .header-menu {
@@ -95,6 +94,7 @@ body {
 
 .home {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 186px;
   padding-right: 120px;
   padding-top: 77px;
@@ -107,15 +107,15 @@ body {
   margin-right: 55px;
 }
 
-.home__title {
-	display: block;
-	flex-direction: space-between;
+.home-content {
+  flex-direction: column;
   justify-content: center;
 }
 
 .home__title__header {
 	display: flex;
-  font-size: 80px;
+	width: 50px;	
+	font-size: 80px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -126,9 +126,11 @@ body {
 
 .home__title__text {
   display: flex;
+  width: 50px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
+  text-align-all: center;
   font-size: 15px;
   line-height: 21px;
   margin-bottom: 38px;
@@ -163,26 +165,69 @@ body {
 
 .home__btn__arrow {
   display: inline-block;
+  cursor: pointer;
 }
 
-
-.home__social-icons {
+.home__net {
   display: flex;
-  align-items: flex-end;
-  flex-direction: row-reverse;
-  width: 37px;
+  width: 100%;
 }
+
+.home__social-icons {  
+  display: flex;
+
+  height: 43px;
+  list-style-type: none;
+  padding-left: 52px;
+  width: 33%;
+  cursor: pointer; 
+ }
 
 .home__social-link {
-	display: flex;
-  align-items: start;
   height: 43px;
   margin-right: 12px;
   width: 43px;
 }
 
+.mouse {
+	display: flex;
+  align-items: center;
+  height: 46px;
+  justify-content: center;
+  margin-top: 16px;
+  width: 33%;
+}
 
+.mouse__btn {
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  transform: translateX(10px);
+  z-index: 1;
+}
+
+.mouse__wheel {
+  background: #000;
+  border-radius: 19px;
+  height: 8px;
+  margin-bottom: 15px;
+  transform: translateX(-5px);
+  width: 3px;
+  z-index: 2;
+}
+/*
 @media (min-width: 1024px) and (max-width: 1280px) {
   * {
     box-sizing: border-box;
   }
+*/
+
+/*Второй слой стр 	*/
+.product{
+  background: #fae8e4;
+  display: flex;
+  padding-bottom: 28px;
+  padding-left: 137px;
+  width: 100%;
+}
+
