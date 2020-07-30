@@ -15,8 +15,8 @@ body {
 }
 
 .header {
+	display: flex;
   align-items: center;
-  display: flex;
   font-size: 0;
   height: 92px;
   width: 100%;
@@ -114,7 +114,7 @@ body {
 
 .home__title__header {
 	display: flex;
-	width: 50px;	
+	width: 50px;
 	font-size: 80px;
   font-family: Montserrat;
   font-style: normal;
@@ -127,7 +127,6 @@ body {
 .home__title__text {
   display: flex;
   width: 50px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   text-align-all: center;
@@ -175,7 +174,6 @@ body {
 
 .home__social-icons {  
   display: flex;
-
   height: 43px;
   list-style-type: none;
   padding-left: 52px;
@@ -222,7 +220,7 @@ body {
   }
 */
 
-/*Второй слой стр 	*/
+/*Второй слой стр*/
 .product{
   background: #fae8e4;
   display: flex;
