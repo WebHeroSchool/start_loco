@@ -5,6 +5,7 @@
 body {
   margin: 0 auto;
   width: 1440px;
+  height: 900px;
   padding: 0;
   font-family: Montserrat, sans-serif;
 }
@@ -58,9 +59,10 @@ body {
 }
 
 .header__left-lang {
-	height: 8px;
+	height: 25px;
   margin: 10px;
   width: 16px;
+  
 }
 
 .header-menu {
@@ -93,12 +95,15 @@ body {
 /*Первый слой*/
 
 .home {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
   padding-left: 186px;
   padding-right: 120px;
   padding-top: 77px;
   width: 100%;
+}
+
+.home__wrap-img {
+	display: inline-flex;  
 }
 
 .home__img-one {
@@ -110,29 +115,30 @@ body {
 .home-content {
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+
 }
 
+
 .home__title__header {
-	display: flex;
-	width: 50px;
+	display: inline-flex;	
 	font-size: 80px;
-  font-family: Montserrat;
+	font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   line-height: 82px;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
   margin-top: 102px;
 }
 
 .home__title__text {
-  display: flex;
-  width: 50px;
+  display: inline-flex;
   font-style: normal;
   font-weight: normal;
   text-align-all: center;
   font-size: 15px;
   line-height: 21px;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
   margin-right: 64px;
 }
 
@@ -168,12 +174,13 @@ body {
 }
 
 .home__net {
-  display: flex;
+  display: inline-flex;
+  flex-direction: column-reverse;
   width: 100%;
-}
+  }
 
 .home__social-icons {  
-  display: flex;
+  display: inline-flex;
   height: 43px;
   list-style-type: none;
   padding-left: 52px;
@@ -188,7 +195,8 @@ body {
 }
 
 .mouse {
-	display: flex;
+	display: inline-flex;
+
   align-items: center;
   height: 46px;
   justify-content: center;
@@ -212,7 +220,7 @@ body {
   transform: translateX(-5px);
   width: 3px;
   z-index: 2;
-}
+} 
 /*
 @media (min-width: 1024px) and (max-width: 1280px) {
   * {
@@ -220,12 +228,12 @@ body {
   }
 */
 
-/*Второй слой стр*/
+/*Второй слой стр
 .product{
   background: #fae8e4;
   display: flex;
   padding-bottom: 28px;
   padding-left: 137px;
   width: 100%;
-}
+}*/
 
