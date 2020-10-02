@@ -186,11 +186,12 @@ body {
   padding: 10px;
 }
 
+
 .adress__item--mouse {
   position: relative;
   right: 19.5px;
   bottom: 35px;
-  z-index: 1px
+  z-index: 1px;
 }
 
 
