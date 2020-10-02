@@ -168,7 +168,7 @@ body {
 }
 
 .adress {
-  width: 52%;
+  width: 53%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,7 +177,7 @@ body {
 }
 
 .adress--left {
-  margin-left: 52px;     
+  margin-left: 52px;
   display: flex;
   justify-content: space-around;
 }
@@ -186,13 +186,12 @@ body {
   padding: 10px;
 }
 
-.adress--right {
-
-
+.adress__item--mouse {
+  position: relative;
+  right: 19.5px;
+  bottom: 35px;
+  z-index: 1px
 }
-
-
-
 
 
 
