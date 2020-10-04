@@ -111,7 +111,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 45%;
+  width: 50%;
 }
 
 .home__lead__title {
@@ -164,11 +164,10 @@ body {
   padding: 14px 41px 14px 41px;
   border: 1.5px solid #000000;
   box-sizing: border-box;
-
 }
 
 .adress {
-  width: 53%;
+  width: 51%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,13 +176,13 @@ body {
 }
 
 .adress--left {
-  margin-left: 52px;
+  margin-left: 40px;
   display: flex;
   justify-content: space-around;
 }
 
 .adress__item {
-  padding: 10px;
+  padding: 6px;
 }
 
 
