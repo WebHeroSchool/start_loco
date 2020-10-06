@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
+
 }
 
 body {
-  margin: 0;
+  margin: 0 auto ;
   padding: 0;
   color: #000000;
   font-family: "Montserrat", sans-serif;
@@ -12,8 +13,8 @@ body {
 } 
 
 .main-page {
-  background: linear-gradient(to right, black 32%, white 10%);
-  padding-bottom: 27px;
+  background: linear-gradient(to right, #000 460px, #fff 460px);
+  min-height: 900px;
 }
 
 .header {
@@ -62,8 +63,8 @@ body {
 .header__left-lang {
 	height: 25px;
   margin: 10px;
-  width: 16px;
-  
+  width:
+  16px
 }
 
 .header-menu {
@@ -174,6 +175,7 @@ body {
   align-items: center;
   cursor: pointer;
   margin-bottom: 41px;
+
 }
 
 .adress--left {
