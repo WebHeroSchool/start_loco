@@ -173,9 +173,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
-  margin-bottom: 41px;
-
+  margin-bottom: 41px; 
 }
 
 .adress--left {
@@ -187,7 +185,6 @@ body {
 .adress__item {
   padding: 6px;
 }
-
 
 .adress__item--mouse {
   position: relative;
