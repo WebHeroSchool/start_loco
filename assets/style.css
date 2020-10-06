@@ -19,6 +19,7 @@ body {
 
 .header {
 	display: flex;
+  justify-content: space-between;
   align-items: center;
   font-size: 0;
   height: 92px;
@@ -71,10 +72,12 @@ body {
   background-color: #f2f2f2;
   cursor: pointer;
   height: 92px;
-  margin-left: 1348px;
-  position: absolute;
   top: 0;
   width: 92px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-menu__line::before {
@@ -86,12 +89,8 @@ body {
 .header-menu__line::before {
   background: #000;
   display: block;
-  height: 4px;
-  left: 50%;
-  margin-left: -18px;
-  position: absolute;
-  top: 53%;
-  width: 36.5px;
+  height: 2px;
+  width: 35px;
 }
 
 /* -------1------- */
@@ -105,8 +104,8 @@ body {
 }
 
 .description__image {
-  width: 549px;
-  height: 562px;
+  width: 34,313em;
+  height: 35.125em;
 }
 
 .home__lead {
@@ -117,7 +116,7 @@ body {
 }
 
 .home__lead__title {
-  margin: 26px;
+  margin: 15px;
   font-family: Montserrat;
   font-style: bold;
   font-weight: bold;
@@ -127,20 +126,20 @@ body {
 }
 
 .home__lead__text {
-  margin: 26px;
+  margin: 15px;
   width: 467px;
-  height: 127px;
+  height: 140px;
   border: none;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
-  line-height: 21px;
+  line-height: 23px;
   margin-left: 54px;
 }
 
 .lead-nav {
-  margin: 26px;
+  margin: 15px;
   display: flex;
   justify-content: space-between;
   margin-left: 51px;
@@ -155,7 +154,7 @@ body {
   font-size: 13px;
   text-decoration: none;
   color: black;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .lead-nav__img {
