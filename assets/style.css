@@ -126,15 +126,15 @@ body {
 }
 
 .home__lead__text {
-  margin: 15px;
-  width: 467px;
-  height: 140px;
+  margin: 16px;
+  width: 29.1875em;
+  height: 7.9375em;
   border: none;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 23px;
+  font-size: 1em;
+  line-height: 25px;
   margin-left: 54px;
 }
 
@@ -168,15 +168,15 @@ body {
 }
 
 .adress {
-  width: 51%;
+  width: 710px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 41px; 
+  align-items: center;  
+  margin-bottom: 41px;
 }
 
 .adress--left {
-  margin-left: 40px;
+  margin-left: 52px;
   display: flex;
   justify-content: space-around;
 }
@@ -220,13 +220,7 @@ body {
   background: #fae8e4;
   width: 100%;
 
-
-
-
-
-
-
-
+}
 
 
 
