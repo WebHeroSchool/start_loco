@@ -68,7 +68,6 @@ body {
 }
 
 .header-menu {
-  
   background-color: #f2f2f2;
   cursor: pointer;
   height: 92px;
@@ -124,7 +123,7 @@ body {
   font-size: 97px;
   line-height: 86px;
   margin-left: 52px;
-  margin-top: 20px;
+  margin-top: 33px;
 }
 
 .home__lead__text {
@@ -146,27 +145,31 @@ body {
   display: flex;
   justify-content: space-between;
   margin-left: 51px;
+  line-height: 32px;
+  font-size: 18px;
+  margin-top: 17px;
 
 }
 
 .lead-nav__item {
-  padding: 12px;
+  padding: 7px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 13.5px;
   text-decoration: none;
   color: black;
-  margin-right: 41px;
+  margin-right: 46px;
  
 }
 
 .lead-nav__img {
   padding: 0 0 0 14px;
+
 }
 
 .lead-nav__item--border {
-  padding: 12px 46px 12px 46px;
+  padding: 4px 44px 4px 44px;
   border: 1.5px solid #000000;
   box-sizing: border-box;
 }
