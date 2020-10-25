@@ -12,6 +12,7 @@ body {
   min-width: 320px;
 } 
 
+
 .main-page {
   background: linear-gradient(to right, #000 460px, #fff 460px);
   min-height: 900px;
@@ -48,6 +49,8 @@ body {
   color: white;
 }
 
+
+
 .header__left-lang {	
 	position: relative;
   display: flex;
@@ -79,9 +82,12 @@ body {
   align-items: center;
  }
 
+
+}
 .header-menu__line::before {
   content: '';
   transform: translateY(-11px);
+
 }
 
 .header-menu__line,
@@ -90,6 +96,7 @@ body {
   display: block;
   height: 2px;
   width: 35px;
+  margin-top: 10px;
 }
 
 /* -------1------- */
@@ -99,7 +106,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 135px;
+  margin-left: 165px;
 }
 
 
@@ -195,6 +202,66 @@ body {
 }
 
 
+@media screen and (max-width: 765px) {
+
+* {
+  box-sizing: border-box;
+  }
+
+.body {
+  margin: 0 auto;
+  max-width: 767px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 69px;
+  background-color: white;
+ }
+
+.header__left-logo {
+  margin-left: 26px;
+  margin-top: 14px;
+  color: black;
+}
+
+.header-menu {
+  display: flex;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  height: 69px;
+  top: 0;
+  width: 69px;
+}
+
+.main-page {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.home {
+  background-image: url('./images/pete-bellis-432867-unsplash.png');
+}
+
+.description {
+  height: 642px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0; 
+}
+
+.home__lead__title {
+  font-size: 60px;
+  line-height: 51px;
+  margin-left: 26px;
+  margin-top: 516px;
+ 
+
+}
 
 
 
@@ -202,13 +269,30 @@ body {
 
 
 
+/*скрытие элементов*/
+  .header__left-lang {
+    visibility: hidden;
+    display: none;
+  }
 
+  .home__lead__text  {
+    visibility: hidden;
+    display: none;
+  }
+  .lead__nav {
+    visibility: hidden;
+    display: none;
+  }
+  .adress  {
+    visibility: hidden;
+    display: none;
+  }
+  .description__image  {
+    visibility: hidden;
+    display: none;
+  }
 
-
-
-
-
-
+}
 
 
 
