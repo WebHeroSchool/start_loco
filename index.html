@@ -13,44 +13,63 @@
   </head>
   <!-- Отобр. тело веб-страницы -->
   <body>
-    <section class="main-page">
+    <main class="main">
       <header class="header">
-        <div class="header__left">
-          <div class="header__left-logo">LOCO</div>
-            <div class="header__left-lang">RU</div>
-            <img class="header__left-lang" src="./images/Vector.svg" width="11" height="5.5" alt="arrow"> 
+        <div class="header__head">
+          <h2 class="header__logo">LOCO</h2>
+           <div class="header__lang">
+              <a class="header__lang-option" href="#" title="Язык">RU</a>
+           </div>
         </div>
-        <div class="header-menu">
-          <span class="header-menu__line"></span>
-          <span class="header-menu__line"></span>
+        <div class="header__menu">
+          <div class="header__burger">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
   <!-- Первый слой стр -->
-  <section class="home">
-    <article class="description">
-      <img src="images/one-bag.png" alt="" class="description__image">
-    <section class="home__lead">
-      <h1 class="home__lead__title">Новая коллекция</h1>
-      <p class="home__lead__text">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
-      <div class="lead__nav lead-nav">
-        <a href="#" class="lead-nav__item lead-nav__item--border" type="button">ЧИТАТЬ ДАЛЬШЕ</a>
-        <a href="#" class="lead-nav__item">ДРУГИЕ ПРЕДЛОЖЕНИЯ<img src="./images/Vector 2.1.svg" alt="" class="lead-nav__img" type="button"></a>
+  <section class="up-section">
+    <div class="up-section__collection">
+      <div class="up-section__images">
+        <picture class="up-section__collection-image">
+          <source media="(min-width: 768px)" srcset="images/girl.png">
+          <img src="images/pete-bellis.png" alt="new-collection-mob">
+        </picture>
       </div>
-    </section>
-    </article>
-      <nav class="adress">
-        <div class="adress--left">
-          <a href="#"><img src="images/INST.svg" alt="" class="adress__item"></a>
-          <a href="#"><img src="images/VK.svg" alt="" class="adress__item"></a>
-          <a href="#"><img src="images/FB.svg" alt="" class="adress__item"></a>
-        </div>
-        <div class="adress--right">          
-          <a href="#"><img src="./images/Rectangle 8.svg" alt="" class="adress__item--center"></a>  
-          <a href="#"><img src="./images/Rectangle 9.svg" alt="" class="adress__item--mouse"></a> 
-        </div>
-      </nav>    
-  <!-- Второй слой стр -->
+      <div class="up-section__collection-description">
+         <h1 class="up-section__title">Новая коллекция</h1>                
+         <p class="up-section__description">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+         <div class="up-section__btn">
+          <a class="up-section__btn up-section__btn_else" href="#" title="Читать дальше">читать дальше</a>
+          <a class="up-section__btn up-section__btn_offer" href="#" title="Другие предложения">другие предложения<div class="up-section__arrow"><div></div></div></a>
+         </div>
+      </div>
+    </div>
+      <div class="up-section__contacts">
+        <ul class="up-section__contacts-list  social">
+        <li class="social__item">
+        <a class="social__link" href="#">
+          <img class="social__link-inst" src="images/INST.png" width="43" height="43" alt="Instagram">
+        </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__link-vkontakte" src="images/VK.png" width="43" height="43" alt="Вконтакте">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__link-facebook" src="images/FB.png" width="43" height="43" alt="Facebook">
+          </a>
+        </li>
+        </ul>
+       </div>
+      <a class="up-section__scrooll-link" href="#">
+        <img class="up-section__scrooll" src="images/Scrooll.png" alt="scrooll">
+      </a>
+  </section>  
+  <!-- Второй слой стр
     <section class="product">
       <div class="product__wrap">
         <div class="product__wrap-img">
@@ -87,7 +106,7 @@
         </div>
       </div>
     </section>
-<!-- Третий слой стр -->
+ Третий слой стр 
     <section class="look">
       <div class="look__wrap"></div>
         <div class="look__wrap-img"></div>
@@ -114,7 +133,7 @@
       <footer class="footer">
         <p class="footer__txt">РАЗРАБОТАНО В</p>
         <img class="footer__img" src="images/logo-whs.png" alt="created-by">
-      </footer>
+      </footer> -->
     </section>
   </body>
 </html>
