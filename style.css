@@ -251,7 +251,25 @@ button {
 }
 
 
+/* Стили второй секции
+.look {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fae8e4;
+}
 
+.look__card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.look__image-wrap {
+  position: relative;
+  margin-left: 137px;
+  display: flex;
+  align-items: center;
+}*/
 
 @media (max-width: 1112px) {
 
