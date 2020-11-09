@@ -1,80 +1,53 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
   <head>
-  	<!-- Кодировка документа -->
+      <!-- Кодировка документа -->
     <meta charset="UTF-8">
     <!-- Meta-тег для адаптивной верстки -->
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <!-- Подключаем css -->
-    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Подключаем fonts.css -->
-    <link rel="stylesheet" href="assets/fonts.css">
+    <link href="./fonts.css" rel="stylesheet">
+    <!-- Подключаем css -->
+    <link href="./style.css" rel="stylesheet">
     <title>LOCO</title>
   </head>
   <!-- Отобр. тело веб-страницы -->
-  <body>
-    <main class="main">
+    <body>
       <header class="header">
-        <div class="header__head">
-          <h2 class="header__logo">LOCO</h2>
-           <div class="header__lang">
-              <a class="header__lang-option" href="#" title="Язык">RU</a>
-           </div>
-        </div>
-        <div class="header__menu">
-          <div class="header__burger">
-            <span class="header__burger-line"></span>
-            <span class="header__burger-line"></span>
-          </div>
-        </div>
+        <div class="header__logo">LOCO</div>
+        <button class="header__lang">
+          <span class="header__lang-ru" href="#">RU</span>
+        </button>
+        <button class="header__menu-button menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
       </header>
-  <!-- Первый слой стр -->
-  <section class="up-section">
-    <div class="up-section__collection">
-      <div class="up-section__images">
-        <picture class="up-section__collection-image">
-          <source media="(min-width: 768px)" srcset="images/girl.png">
-          <img src="images/pete-bellis.png" alt="new-collection-mob">
-        </picture>
-      </div>
-      <div class="up-section__collection-description">
-         <h1 class="up-section__title">Новая коллекция</h1>                
-         <p class="up-section__description">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
-         <div class="up-section__btn">
-          <a class="up-section__btn up-section__btn_else" href="#" title="Читать дальше">читать дальше</a>
-          <a class="up-section__btn up-section__btn_offer" href="#" title="Другие предложения">другие предложения<div class="up-section__arrow"><div></div></div></a>
-         </div>
-      </div>
-    </div>
-      <div class="up-section__contacts">
-        <ul class="up-section__contacts-list  social">
-        <li class="social__item">
-        <a class="social__link" href="#">
-          <img class="social__link-inst" src="images/INST.png" width="43" height="43" alt="Instagram">
-        </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__link-vkontakte" src="images/VK.png" width="43" height="43" alt="Вконтакте">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__link-facebook" src="images/FB.png" width="43" height="43" alt="Facebook">
-          </a>
-        </li>
-        </ul>
-       </div>
-      <a class="up-section__scrooll-link" href="#">
-        <img class="up-section__scrooll" src="images/Scrooll.png" alt="scrooll">
-      </a>
-  </section>  
-  <!-- Второй слой стр
+  <!-- Первый слой стр  -->    
+    <main class="main">
+      <section class="collection">
+        <article class="collection__card">
+          <div class="collection__image"></div>
+            <div class="collection__info info-collection">
+              <h1 class="info-collection__title">Новая коллекция</h1>
+              <p class="info-collection__description description"> Бесплатная доставка включена. Предложение действует на сайте<a class="description__link" href="#">loco.com</a> и в магазинах до <time datetime="2018-09-18">18.09.2018.</time>Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+              <button class="info-collection__button button">ЧИТАТЬ ДАЛЬШЕ</button>
+               <a class="info-collection__link-other link" href="#">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
+            </div>
+        </article>
+        <div class="collection__social social">
+          <a class="social__item" href="#"><img class="social__icon" src="./images/icon-inst.svg" alt="Ссылка на Instagram"></a>
+          <a class="social__item" href="#"><img class="social__icon" src="./images/icon-vk.svg" alt="Ссылка на vk.com"></a>
+          <a class="social__item" href="#"><img class="social__icon" src="./images/icon-fb.svg" alt="Ссылка на Facebook"></a>
+        </div>
+        <div class="collection__scroll"></div>
+      </section>  
+  <!-- Второй слой стр  
     <section class="product">
       <div class="product__wrap">
         <div class="product__wrap-img">
-          <img class="product__img-grey" src="images/grey-bag.png" alt="Grey bag">
-          <img class="product__img-pink" src="images/pink-bag.png" alt="Pink bag">
+          <img class="product__img-grey" src="./images/clutch-grey.png" alt="Grey bag">
+          <img class="product__img-pink" src="./images/clutch-pink.png" alt="Pink bag">
         </div>
       </div>
       <div class="product__container"></div>
@@ -106,11 +79,11 @@
         </div>
       </div>
     </section>
- Третий слой стр 
+-- Третий слой стр --
     <section class="look">
       <div class="look__wrap"></div>
         <div class="look__wrap-img"></div>
-          <img class="look__img-two" src="images/two-bag.png" alt="two bag">
+          <img class="look__img-two" src="./images/look.png" alt="two bag">
       <div class="look__container"></div>
       <div class="look__header"></div>
         <h1 class="look__title">Serene Total Look</h1>
@@ -133,7 +106,7 @@
       <footer class="footer">
         <p class="footer__txt">РАЗРАБОТАНО В</p>
         <img class="footer__img" src="images/logo-whs.png" alt="created-by">
-      </footer> -->
-    </section>
+      </footer> 
+    </section>--
   </body>
 </html>
