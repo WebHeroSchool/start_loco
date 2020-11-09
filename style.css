@@ -6,8 +6,8 @@ body {
 }
 
 .header {
-  display: flex;
   width: 100%;
+  display: flex;
   background: linear-gradient(to right, #000 461px, #fff 461px); 
 }
 
@@ -443,7 +443,6 @@ button {
     background-size: 540px;
     background-position-x: -75px;
   }
-
   .collection__card {
     height: 529px;
   }
