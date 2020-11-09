@@ -43,70 +43,65 @@
         <div class="collection__scroll"></div>
       </section>  
   <!-- Второй слой стр  
-    <section class="product">
-      <div class="product__wrap">
-        <div class="product__wrap-img">
-          <img class="product__img-grey" src="./images/clutch-grey.png" alt="Grey bag">
-          <img class="product__img-pink" src="./images/clutch-pink.png" alt="Pink bag">
-        </div>
-      </div>
-      <div class="product__container"></div>
-        <div class="product__header">
-          <h1 class="product__title">Кожаный клатч</h1>
-          <h2 class="product__suptitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h2>
-          <p class="product__text">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
-          <div class="product__buttons">
-            <div class="product__list">
-              <ul class="product__list-colors">
-                <li class="product__list-white"></li>
-                <li class="product__list-pink"></li>
-                <li class="product__list-blue"></li>
-                <li class="product__list-green"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-          <span class="product__price">1990₽</span>
-          <div class="product__cart-form">
-            <div class="product-quantity">
-            <span class="product-quantity__less">-</span>
-            <span class="product-quantity__value">1</span>
-            <span class="product-quantity__more">+</span>
-         </div>
-         <button class="product__add">ДОБАВИТЬ В КОРЗИНУ</button>
-         <div class="product__link">
-           <a class="product__link-others link " href=# title="Посмотреть другие предложения">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
-        </div>
-      </div>
-    </section>
--- Третий слой стр --
     <section class="look">
-      <div class="look__wrap"></div>
-        <div class="look__wrap-img"></div>
-          <img class="look__img-two" src="./images/look.png" alt="two bag">
-      <div class="look__container"></div>
-      <div class="look__header"></div>
-        <h1 class="look__title">Serene Total Look</h1>
-        <h2 class="look__suptitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h2>
-        <p class="look__text">Джинсы, свитер, обувь.</p>
-        <p class="look__text">В комплект также входит пакет ароматного чая и кружка.</p>
-      <div class="look__cart-form">
-        <div class="look-quantity">
-            <span class="look-quantity__less">-</span>
+      <article class="look__card">
+        <div class="look__image-wrap">
+          <img class="look__image product__image_grey" src="./images/clutch-grey.png" alt="Серый клатч">
+          <img class="look__image product__image_pink" src="./images/clutch-pink.png" alt="Розовый клатч">
+        </div>
+        <div class="look__info info-product">
+          <h2 class="info-look__title card-title">Кожаный клатч</h2>
+            <div class="info-look__subtitle card-subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</div>
+              <p class="info-look__description description">Бесплатная доставка включена. Предложение действует на сайте<a class="description__link" href="#">loco.com</a> и в магазинах до <time datetime="2018-09-18">18.09.2018.</time> Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+              <div class="info-look__color color">
+                 <input class="color__input" type="radio" id="grey" name="color" value="grey">
+                 <label class="color__item color__item_grey" for="grey"></label>
+                 <input class="color__input" type="radio" id="pink" name="color" value="pink"checked>
+                 <label class="color__item color__item_pink color__item_checked" for="pink"></label>
+                 <input class="color__input" type="radio" id="blue" name="color" value="blue">
+                 <label class="color__item color__item_blue" for="blue"></label>
+                 <input class="color__input" type="radio" id="green" name="color" value="green">
+                 <label class="color__item color__item_green" for="green"></label>
+              </div>
+              <span class="info-look__price">1990₽</span>
+                <div class="info-look__quantity quantity">
+                  <button class="quantity__decrease">-</button>
+                  <span class="quantity__value">1</span>
+                  <button class="quantity__increase">+</button>
+                </div>
+              <button class="info-look__button button">ДОБАВИТЬ В КОРЗИНУ</button>
+        </div>
+      </article>
+      <a class="look__link-other link" href="#">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+    </section>
+ Третий слой стр 
+    <section class="clothes">
+      <div class="clothes__wrap"></div>
+        <div class="clothes__wrap-img"></div>
+          <img class="clothes__img-two" src="./images/look.png" alt="two bag">
+      <div class="clothes__container"></div>
+      <div class="clothes__header"></div>
+        <h1 class="clothes__title">Serene Total Look</h1>
+        <h2 class="clothes__suptitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h2>
+        <p class="clothes__text">Джинсы, свитер, обувь.</p>
+        <p class="clothes__text">В комплект также входит пакет ароматного чая и кружка.</p>
+      <div class="clothes__cart-form">
+        <div class="clothes-quantity">
+            <span class="clothes-quantity__less">-</span>
           <label>
-            <input class="look-quantity__value" type="text" size="1" value="1">
+            <input class="clothes-quantity__value" type="text" size="1" value="1">
           </label>
-            <span class="look-quantity__more">+</span>
+            <span class="clothes-quantity__more">+</span>
           </div>
-      <button class="look__add">ДОБАВИТЬ В КОРЗИНУ</button>
-        <div class="look__link">
-          <a class="look__link-others link " href=# title="Посмотреть другие предложения">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+      <button class="clothes__add">ДОБАВИТЬ В КОРЗИНУ</button>
+        <div class="clothes__link">
+          <a class="clothes__link-others link " href=# title="Посмотреть другие предложения">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
         </div>
       </div>
       <footer class="footer">
         <p class="footer__txt">РАЗРАБОТАНО В</p>
         <img class="footer__img" src="images/logo-whs.png" alt="created-by">
       </footer> 
-    </section>--
+    </section>-->
   </body>
 </html>
