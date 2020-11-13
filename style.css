@@ -3,6 +3,8 @@
 body {
   margin: 0;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  max-width: 1440px;
+  min-width: 320px;
 }
 
 .header {
@@ -251,6 +253,21 @@ button {
 }
 
 
+
+
+
+
+
+/*
+.ccollection__info{
+
+   justify-content:center;
+   align-items:center;
+
+  } 
+
+
+
 /* Стили второй секции
 .look {
   height: 900px;
@@ -365,22 +382,25 @@ button {
   }
 }
 
+@media (max-width: 766px) and (min-width: 585px) {
+.collection__info {
+position: relative;
+
+}
+
+.info-collection__title {
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  letter-spacing: 0.39px;
+  padding-top: 50px;
+  left: 95px;
+}
+}
 
 /*моб версия*/
 
 @media (max-width: 767px) {
-  .description {
-    font-size: 9px;
-    line-height: 13px;
-  }
-
-  .button {
-    width: 260px;
-    height: 37px;
-    border: 1px solid #000;
-    font-size: 13px;
-  }
-
   .header {
     background: #fff;
     height: 69px;
@@ -452,6 +472,7 @@ button {
     height: 22px;
     background-image: url(./images/scroll-mob.svg);
   }   
+
 }
 
 @media (max-width: 425px) {
