@@ -563,7 +563,7 @@ position: relative;
 }
 }
 
-/*моб версия*/
+/* моб версия */
 
 @media (max-width: 767px) {
   .header {
