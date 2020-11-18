@@ -76,32 +76,26 @@
     </section>
 <!-- Третий слой стр -->
     <section class="clothes">
-      <div class="clothes__wrap"></div>
-        <div class="clothes__wrap-img"></div>
-          <img class="clothes__img-two" src="./images/look.png" alt="two bag">
-      <div class="clothes__container"></div>
-      <div class="clothes__header"></div>
-        <h1 class="clothes__title">Serene Total Look</h1>
-        <h2 class="clothes__suptitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h2>
-        <p class="clothes__text">Джинсы, свитер, обувь.</p>
-        <p class="clothes__text">В комплект также входит пакет ароматного чая и кружка.</p>
-      <div class="clothes__cart-form">
-        <div class="clothes-quantity">
-            <span class="clothes-quantity__less">-</span>
-          <label>
-            <input class="clothes-quantity__value" type="text" size="1" value="1">
-          </label>
-            <span class="clothes-quantity__more">+</span>
+      <article class="clothes__card">
+        <img class="clothes__image" src="./images/look.png" alt="Осенний лук">
+          <div class="clothes__info info-clothes">
+            <h2 class="info-clothes__title card-title">Serene Total Look</h2>
+            <div class="info-clothes__subtitle card-subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</div>
+            <p class="info-clothes__description description">Джинсы, свитер, обувь.<br>В комплект также входит пакет ароматного чая и кружка.</p>
+            <div class="info-clothes__quantity quantity">
+              <button class="quantity__decrease quantity__decrease_pink">-</button>
+              <span class="quantity__value">1</span>
+              <button class="quantity__increase quantity__increase_pink">+</button>
+            </div>
+            <button class="info-clothes__button button">ДОБАВИТЬ В КОРЗИНУ</button>
           </div>
-      <button class="clothes__add">ДОБАВИТЬ В КОРЗИНУ</button>
-        <div class="clothes__link">
-          <a class="clothes__link-others link " href=# title="Посмотреть другие предложения">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
-        </div>
-      </div>
-      <footer class="footer">
-        <p class="footer__txt">РАЗРАБОТАНО В</p>
-        <img class="footer__img" src="images/logo-whs.png" alt="created-by">
-      </footer> 
+      </article>
+      <a class="clothes__link-other link" href="#">ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
     </section>
+    </main>
+    <footer class="footer">
+      <span class="footer__clothes-text">РАЗРАБОТАНО В</span>
+      <img class="footer__clothes-logo" src="./images/logo-whs.png" alt="WebHero School">
+    </footer>
   </body>
 </html>
