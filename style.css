@@ -449,6 +449,113 @@ button {
 }
 /* Стили  третий секции */
 
+.clothes {
+  display: flex;
+  flex-direction: column;
+  height: 861px;
+  background: linear-gradient(to right, #ebe3d8 388px, #000 388px, #000 461px, #ebe3d8 461px);
+}
+
+.clothes__card {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+.clothes__image {
+  position: relative;
+  width: 827px;
+  height: 621px;
+  top: 139px;
+  left: 88px;
+  box-shadow: 0 50px 40px -40px rgba(0, 0, 0, 0.2);
+}
+
+.clothes__info {
+  position: absolute;
+  top: 255px;
+  right: 148px;
+  width: 475px;
+  height: 351px;
+  background-color: #fae8e4;
+}
+
+.info-clothes__title {
+  margin: 39px 0 15px 47px;
+}
+
+.info-clothes__subtitle {
+  margin: 0 0 32px 47px;
+}
+
+.info-clothes__description {
+  width: 368px;
+  height: 101px;
+  margin: 0 0 18px 50px;
+  opacity: .5;
+}
+
+.info-clothes__quantity {
+  margin: 0 11px 0 47px;
+}
+
+.info-clothes__button {
+  width: 253px;
+  height: 44px;
+  margin-top: 0px;
+  padding: 2px 5px 0 0;
+}
+
+.quantity__decrease_pink:hover,
+.quantity__increase_pink:hover,
+.info-clothes__button:hover {
+  background-color: #f1e0dd;
+}
+
+.quantity__decrease_pink:active,
+.quantity__increase_pink:active,
+.info-clothes__button:active {
+  background-color: #e7d6d3;
+}
+
+.clothes__link-other {
+  margin: 22px 148px 0 auto;
+  z-index: 1;
+}
+
+.clothes__link-other::after {
+  display: inline-block;
+  margin-left: 15px;
+  width: 108px;
+  height: 10px;
+  content: '';
+  background-image: url(./images/look-arrow-desk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 39px;
+  background: linear-gradient(to right, #ebe3d8 388px, #000 388px, #000 461px, #ebe3d8 461px);
+}
+
+.footer__clothes-text {
+  display: inline-block;
+  margin-top: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__clothes-logo {
+  width: 82px;
+  height: 22px;
+  margin: 2px 22px 0 16px;
+}
 
 
 
@@ -546,6 +653,7 @@ button {
     top: -15px;
   }
 }
+
 
 @media (max-width: 766px) and (min-width: 585px) {
 .collection__info {
