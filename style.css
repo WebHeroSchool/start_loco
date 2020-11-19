@@ -558,10 +558,52 @@ button {
 }
 
 
+@media (max-width: 1380px) {
+/*2*/
+  .look__image-wrap {
+    margin-left: 15px;
+  }
+
+  .look__info {
+    margin-right: 50px;
+  }
+
+  .look__link-other {
+    margin-right: 56px;
+  }
+/*3*/
+  .clothes__info {
+    right: 50px;
+  }
+
+  .clothes__link-other {
+    margin-right: 55px;
+  }
+}
+
+@media (max-width: 1205px) {
+/*2*/
+  .look__image_pink {
+    height: 744px;
+    width: 482px;
+  }
+
+/*3*/
+  .clothes__image {
+    width: 727px;
+    height: 521px;
+    top: 165px;
+    left: 35px;
+  }
+
+  .clothes__link-other {
+    margin-top: 120px;
+  }
+}
 
 
 @media (max-width: 1112px) {
-
+/*1*/
   .collection {
     height: 753px;
   }
@@ -586,14 +628,100 @@ button {
   .collection__scroll {
     height: 48px;
     top: -45px;
-  }    
+  } 
+/*2*/     
+  .look__image-wrap {
+    margin-left: 75px;
+  }
+
+  .look__image_pink {
+    top: 148px;
+    left: 50px;
+    width: 382px;
+    height: 544px;
+  }
+
+  .look__image_grey {
+    top: 269px;
+    width: 298px;
+    height: 315px;
+  }
+
+  .look__info {
+    width: 400px;
+    height: 477px;
+  }
+
+  .info-look__title {
+    margin-left: 28px;
+  }
+
+  .info-look__subtitle {
+    margin: 0 0 28px 28px;
+  }
+
+  .info-look__description {
+    margin: 0 4px 0 24px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .info-look__color {
+    margin: 14px 0 42px 28px;
+  }
+
+  .info-look__price {
+    bottom: 0;
+    margin-left: 27px;
+  }
+
+  .info-look__quantity {
+    margin-left: 24px;
+  }
+
+  .info-look__button {
+    margin-left: 7px;
+    font-size: 13px;
+  }
+
+  .look__link-other {
+    font-size: 12px;
+  }
+/*3*/
+  .clothes__info {
+    right: 35px;
+    width: 432px;
+    height: 340px;
+  }
+
+  .info-clothes__title {
+    margin: 25px 0 15px 27px;
+  }
+
+  .info-clothes__subtitle {
+    margin: 0 0 28px 28px;
+  }
+
+  .info-clothes__description {
+    margin: 0 0 18px 28px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .info-clothes__quantity {
+    margin-left: 28px;
+  }
+
+  .info-clothes__button {
+    font-size: 13px;
+  }
+
+  .clothes__link-other {
+    margin: 112px 39px 0 auto;
+  }  
 }
 
 @media (max-width: 1023px) {
-  .link {
-    font-size: 9px;
-  }
-
   .header {
     background: linear-gradient(to right, #000 301px, #fff 301px);
   }
@@ -602,6 +730,10 @@ button {
     margin-left: 78px;
   }
 
+  .link {
+    font-size: 9px;
+  }
+/*1*/
   .collection {
     height: 543px;
     background: linear-gradient(to right, #000 301px, #fff 301px);
@@ -652,13 +784,106 @@ button {
   .collection__scroll {
     top: -15px;
   }
+  .clothes__image {
+    width: 577px;
+    height: 501px;
+    top: 172px;
+  }
+
+  .clothes__link-other {
+    margin-top: 125px;
+  }
+ /*3*/
+  .clothes__image {
+    width: 577px;
+    height: 501px;
+    top: 172px;
+  }
+
+  .clothes__link-other {
+    margin-top: 125px;
+  }
 }
 
+@media (max-width: 938px) {
+/*2*/
+  .look__image_pink {
+    left: 0;
+  }
+
+  .look__image_grey {
+    left: -54px;
+  }
+
+  .look__info {
+    margin-right: 30px;
+  }
+
+  .look__link-other {
+    margin-right: 36px;
+  }
+}
+
+@media (max-width: 875px) {
+/*2*/
+  .look__image_grey {
+    display: none;
+  }
+
+  .look__image_pink {
+    top: 106px;
+    left: -65px;
+  }
+
+  .look__info {
+    height: 479px;
+  }
+/*3*/
+  .clothes__image {
+    top: 203px;
+    left: 15px;
+    width: 512px;
+    height: 446px;
+  }
+
+  .clothes__info {
+    top: 266px;
+    right: 15px;
+    width: 418px;
+    height: 316px;
+  }
+
+  .clothes__link-other {
+    margin: 163px 20px 0 auto;
+  }
+}
+
+@media (max-width: 816px) {
+/*2*/
+  .look__image_pink {
+    left: -59px;
+    width: 322px;
+    height: 484px;
+  }
+/*3*/
+  .clothes, .footer {
+    background: linear-gradient(to right, #ebe3d8 288px, #000 288px, #000 361px, #ebe3d8 361px);
+  }
+    
+  .clothes__image {
+    top: 245px;
+    width: 452px;
+    height: 356px;
+  }
+
+  .clothes__link-other {
+    margin-top: 250px;
+  }
+}
 
 @media (max-width: 766px) and (min-width: 585px) {
 .collection__info {
-position: relative;
-
+  position: relative;
 }
 
 .info-collection__title {
@@ -701,7 +926,7 @@ position: relative;
   .menu-button__line:first-child {
     margin-bottom: 5px;
   }
-
+/*1*/
   .collection {
     height: 100vh;
     background-image: url(./images/model.jpg);
@@ -746,9 +971,177 @@ position: relative;
     background-image: url(./images/scroll-mob.svg);
   }   
 
+/*2*/
+  .look {
+    height: 596px;
+  }
+
+  .look__card {
+    display: flex;
+    height: 596px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+  }
+
+  .look__image-wrap {
+    margin: -63px 0 0 0;
+  }
+    
+  .look__image_pink {
+    position: relative;
+    top: 8px;
+    left: -1px;
+    width: 224px;
+    height: 326px;
+  }
+
+  .look__info {
+    margin: 0;
+    width: 320px;
+    height: 281px;
+    box-shadow: 0 20px 10px -10px rgba(0, 0, 0, 0.1);
+  }
+
+  .info-look__title {
+    width: 192px;
+    height: 23px;
+    margin: 16px 0 2px 29px;
+  }
+    
+  .info-look__subtitle {
+    margin: 0 0 12px 31px;
+  }
+    
+  .info-look__description {
+    width: 252px;
+    height: 84px;
+    margin: 0 0 2px 31px;
+  }
+    
+  .info-look__color {
+    width: 150px;
+    margin: 9px 0 29px 34px;
+    padding-top: 3px;
+  }
+
+  .color__item {
+    width: 23px;
+    height: 23px;
+    margin-right: 9px;
+  }
+
+  .info-look__price {
+    bottom: 5px;
+    margin-left: 33px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+    
+  .info-look__button {
+    margin-left: 31px;
+    padding-right: 8px;
+  }
+
+  .look__link-other {
+    display: none;
+  }
+/*3*/
+  .clothes {
+    height: 597px;
+    background: linear-gradient(to right, #ebe3d8 102px, #000 102px, #000 143px, #ebe3d8 143px );
+  }
+
+  .clothes__card {
+    top: 0px;
+    height: 506px;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  .clothes__image {
+    position: relative;
+    width: 351px;
+    height: 261px;
+    top: 34px;
+    left: 0;
+    box-shadow: -10px 15px 20px -10px rgba(0, 0, 0, 0.2);
+  }
+
+  .clothes__info {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 305px;
+    height: 195px;
+    margin: 0 auto 0 auto;
+  }
+    
+  .info-clothes__title {
+   margin: 24px 0 7px 25px;
+  }
+    
+  .info-clothes__subtitle {
+    margin: 0 0 8px 25px;
+  }
+    
+  .info-clothes__description {
+    width: 228px;
+    height: 46px;
+    margin: 0 0 14px 24px;
+  }
+
+  .info-clothes__button {
+    margin-left: 24px;
+    padding: 0 0 2px 0;
+  }
+
+  .clothes__link-other {
+    width: 150px;
+    margin: 0 37px 0 auto;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .clothes__link-other::after {
+    width: 134px;
+    height: 20px;
+    margin-left: 1px;
+    background-image: url(./images/look-arrow-mob.svg);
+  }
+
+  .footer {
+    display: none;
+  }
+  .card-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+    
+  .card-subtitle {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .description {
+    font-size: 9px;
+    line-height: 13px;
+  }
+
+  .button {
+    width: 260px;
+    height: 37px;
+    border: 1px solid #000;
+    font-size: 13px;
+  }
+
+  .quantity {
+    display: none;
+  }
 }
 
 @media (max-width: 425px) {
+ /*1*/ 
   .collection {
     max-width: 425px;
     height: 529px;
@@ -758,9 +1151,18 @@ position: relative;
   .collection__card {
     height: 529px;
   }
+/*3*/
+  .clothes__card {
+    top: 0;
+  }
+  .clothes__info{
+    right: -9px;
+    top: 13px;
+  }
 }
 
 @media (max-width: 350px) {
+  /*1*/
   .collection {
     background-position-x: -98px;
   }
@@ -768,14 +1170,60 @@ position: relative;
   .collection__info {
     margin-left: 10px;
   }
+/*2*/
+  .look__info {
+    width: 271px;
+    height: 271px;
+  }
+
+  .info-look__title, .info-look__subtitle, .info-look__description, .info-look__color {
+    margin-left: 11px;
+  }
+
+  .info-look__price {
+    margin-left: 28px;
+  }
+
+  .info-look__button {
+    margin-left: 6px;
+  }
+/*3*/
+  .clothes {
+    background: linear-gradient(to right, #ebe3d8 82px, #000 82px, #000 123px, #ebe3d8 123px);
+  }
+
+  .clothes__image {
+    width: 266px;
+    height: 176px;
+    top: 70px;
+  }
+
+  .clothes__info {
+    right: 0;
+    top: 66px;
+    width: 269px;
+    height: 190px;
+  }
+
+ .info-clothes__button {
+    margin-left: 5px;
+  }
+
+  .clothes__link-other {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 305px) {
-  
+/*1*/  
   .info-collection__title {
     width: min-content;
     font-size: 43px;
     line-height: 44px;
+  }
+/*3*/  
+  .clothes__link-other {
+    margin-right: 0;
   }
 }
 
