@@ -1,7 +1,7 @@
 /*Отобр. тело веб-страницы*/
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   max-width: 1440px;
   min-width: 320px;
@@ -557,6 +557,12 @@ button {
   margin: 2px 22px 0 16px;
 }
 
+@media (max-width: 1920px) {
+
+
+
+}
+
 
 @media (max-width: 1380px) {
 /*2*/
@@ -1006,7 +1012,7 @@ button {
   .info-look__title {
     width: 192px;
     height: 23px;
-    margin: 16px 0 2px 29px;
+    margin: 18px 0 2px 29px;
   }
     
   .info-look__subtitle {
@@ -1033,7 +1039,7 @@ button {
 
   .info-look__price {
     bottom: 5px;
-    margin-left: 33px;
+    margin-left: 33.4px;
     height: 20px;
     font-size: 20px;
     line-height: 28px;
