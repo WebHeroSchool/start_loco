@@ -1,0 +1,1235 @@
+/*Отобр. тело веб-страницы*/
+
+body {
+  margin: 0 auto;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  max-width: 1440px;
+  min-width: 320px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  background: linear-gradient(to right, #000 461px, #fff 461px); 
+}
+
+.header__logo {
+  width: 98px;
+  height: 37px;
+  margin: 36px 0 0 52px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: .07em;
+  color: #fff;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.header__lang {
+  display: flex;
+  width: 31px;
+  height: 25px;
+  margin: 42px 0 0 238px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.header__lang::after {
+  display: block;
+  content: '';
+  width: 7px;
+  height: 7px;
+  margin: 9px 0 0 9px;
+  padding-left: 7px;
+  border: 2px solid #fff;
+  border-top: transparent;
+  border-right: transparent;
+  transform: rotate(-45deg);
+  transition: opacity .3s linear;
+}
+
+.header__lang:hover,
+.header__lang:hover::after {
+  opacity: .8;
+}
+
+.header__lang:active,
+.header__lang:active::after {
+  opacity: .6;
+}
+
+.header__lang-ru {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.menu-button {
+  width: 92px;
+  height: 92px;
+  background-color: #f2f2f2;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.header__menu-button {
+  margin-left: auto;
+}
+
+.menu-button__line {
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 35px;
+  height: 4px;
+  background-color: #000;
+}
+
+.menu-button__line:first-child {
+  margin-bottom: 6px;
+}
+
+/* Стили первой секции */
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    height: 808px;
+    background: linear-gradient(to right, #000 461px, #fff 461px);
+}
+
+.collection__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 640px;
+    margin: 38px 0 0 10px;
+}
+
+.collection__image {
+    width: 549px;
+    height: 562px;
+    margin-left: 14px;
+    background-image: url(./images/model.jpg);
+    background-repeat: no-repeat;
+    background-size: 155%;
+    background-position-x: -135px;
+    background-position-y: -185px;
+}
+
+.collection__info {
+    position: relative;
+    width: 490px;
+    height: 400px;
+    margin: auto 0 165px 50px;
+}
+
+.info-collection__title {
+    width: 475px;
+    margin: 66px 0 17px 4px;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 82px;
+}
+
+.info-collection__description {
+    width: 467px;
+    margin: 0 0 38px 4px;
+}
+
+.info-collection__button {
+    width: 203px;
+    height: 44px;
+    outline: 0;
+    transition: background-color .3s linear;
+}
+
+.info-collection__link-other {
+    position: absolute;
+    margin: 13px 0 0 53px;
+}
+
+.info-collection__link-other::after {
+    display: inline-block;
+    position: relative;
+    left: 19px;
+    width: 43px;
+    height: 10px;
+    content: '';
+    background-image: url(./images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.collection__social {
+    display: flex;
+    position: relative;
+    top: 46px;
+    left: 52px;
+    width: 153px;
+    height: 43px;
+    justify-content: space-between;
+}
+
+.social__item {
+    text-decoration: none;
+    transition: opacity .3s linear;
+}
+
+.social__item:hover {
+    opacity: .8;
+}
+
+.social__item:active {
+    opacity: .6;
+}
+
+.collection__scroll {
+    position: relative;
+    width: 27px;
+    height: 46px;
+    margin: 0 auto;
+    top: 2px;
+    background-image: url(./images/scroll-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+
+.description {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  color: #000;
+}
+
+button {
+  font-family : inherit;
+}
+
+.description__link {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.description__link:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  border: 2px solid #000;
+  font-weight: 500;
+  font-size: 13px;
+  color: #000;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+  transition: background-color .3s linear;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+.button:active {
+  background-color: #e0e0e0;
+}
+
+.link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 13px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Стили второй секции */
+.look {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fae8e4;
+}
+
+.look__card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.look__image-wrap {
+  position: relative;
+  margin-left: 137px;
+  display: flex;
+  align-items: center;
+}
+
+.look__image_grey {
+  position: absolute;
+  top: 217px;
+  width: 398px;
+  height: 415px;
+}
+
+.look__image_pink {
+  position: absolute;
+  top: 28px;
+  left: 94px;
+  widht: 582px;
+  height: 844px;
+}
+
+.look__info {
+  height: 556px;
+  width: 488px;
+  margin: 168px 73px 39px 0;
+  background-color: #fff;
+  box-shadow: 10px 20px 45px 0 rgba(0, 0, 0, 0.1);
+}
+
+.info-look__title {
+  height: 41px;
+  width: 340px;
+  margin: 44px 0 15px 55px;
+}
+
+.info-look__subtitle {
+  margin: 0 0 63px 55px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 41px;
+}
+
+.card-subtitle {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: .07em;
+  opacity: .5;
+}
+
+.info-look__description {
+  width: 368px;
+  height: 148px;
+  margin: 0 0 34px 55px;
+  opacity: .5;
+}
+
+.info-look__color {
+  display: inline-block;
+  width: 190px;
+  padding-top: 5px;
+  margin: 14px 0 53px 55px;
+}
+
+.color__input {
+  display: none;
+}
+
+.color__item_grey {
+  background-color: #dedede;
+}
+
+.color__item_pink {
+  background-color: #f29f9f;
+}
+
+.color__item_blue {
+  background-color: #a8bff9;
+}
+
+.color__item_green {
+  background-color: #90bd8f;
+}
+.color__item {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 12px;
+  transition: transform .3s ease-in-out;
+  cursor: pointer;
+}
+
+.color__input:checked + .color__item {
+  transform: scale(1.3);
+}
+
+.info-look__price {
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+  margin-left: 40px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+}
+
+.info-look__quantity {
+  margin-left: 55px;
+}
+
+.info-look__button {
+  width: 253px;
+  height: 44px;
+  margin-left: 12px;
+  padding-right: 19px;
+}
+
+.look__link-other {
+  margin: 0 79px 0 auto;
+  white-space: nowrap;
+}
+
+.look__link-other::after {
+  display: inline-block;
+  margin-left: 17px;
+  width: 241px;
+  height: 10px;
+  content: '';
+  background-image: url(./images/product-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.quantity {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  width: 96px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 0px;
+}
+
+.quantity__decrease,
+.quantity__increase {
+  height: 40px;
+  width: 39px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  transition: background-color .3s linear;
+}
+
+.quantity__decrease:hover,
+.quantity__increase:hover {
+  background-color: #f3f3f3;
+} 
+
+.quantity__decrease:active,
+.quantity__increase:active {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.quantity__increase {
+  padding-left: 5px;
+}
+
+.quantity__value {
+  width: 20px;
+  text-align: center;
+}
+/* Стили  третий секции */
+
+.clothes {
+  display: flex;
+  flex-direction: column;
+  height: 861px;
+  background: linear-gradient(to right, #ebe3d8 388px, #000 388px, #000 461px, #ebe3d8 461px);
+}
+
+.clothes__card {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+.clothes__image {
+  position: relative;
+  width: 827px;
+  height: 621px;
+  top: 139px;
+  left: 88px;
+  box-shadow: 0 50px 40px -40px rgba(0, 0, 0, 0.2);
+}
+
+.clothes__info {
+  position: absolute;
+  top: 255px;
+  right: 148px;
+  width: 475px;
+  height: 351px;
+  background-color: #fae8e4;
+}
+
+.info-clothes__title {
+  margin: 39px 0 15px 47px;
+}
+
+.info-clothes__subtitle {
+  margin: 0 0 32px 47px;
+}
+
+.info-clothes__description {
+  width: 368px;
+  height: 101px;
+  margin: 0 0 18px 50px;
+  opacity: .5;
+}
+
+.info-clothes__quantity {
+  margin: 0 11px 0 47px;
+}
+
+.info-clothes__button {
+  width: 253px;
+  height: 44px;
+  margin-top: 0px;
+  padding: 2px 5px 0 0;
+}
+
+.quantity__decrease_pink:hover,
+.quantity__increase_pink:hover,
+.info-clothes__button:hover {
+  background-color: #f1e0dd;
+}
+
+.quantity__decrease_pink:active,
+.quantity__increase_pink:active,
+.info-clothes__button:active {
+  background-color: #e7d6d3;
+}
+
+.clothes__link-other {
+  margin: 22px 148px 0 auto;
+  z-index: 1;
+}
+
+.clothes__link-other::after {
+  display: inline-block;
+  margin-left: 15px;
+  width: 108px;
+  height: 10px;
+  content: '';
+  background-image: url(./images/look-arrow-desk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 39px;
+  background: linear-gradient(to right, #ebe3d8 388px, #000 388px, #000 461px, #ebe3d8 461px);
+}
+
+.footer__clothes-text {
+  display: inline-block;
+  margin-top: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__clothes-logo {
+  width: 82px;
+  height: 22px;
+  margin: 2px 22px 0 16px;
+}
+
+@media (max-width: 1920px) {
+
+
+
+}
+
+
+@media (max-width: 1380px) {
+/*2*/
+  .look__image-wrap {
+    margin-left: 15px;
+  }
+
+  .look__info {
+    margin-right: 50px;
+  }
+
+  .look__link-other {
+    margin-right: 56px;
+  }
+/*3*/
+  .clothes__info {
+    right: 50px;
+  }
+
+  .clothes__link-other {
+    margin-right: 55px;
+  }
+}
+
+@media (max-width: 1205px) {
+/*2*/
+  .look__image_pink {
+    height: 744px;
+    width: 482px;
+  }
+
+/*3*/
+  .clothes__image {
+    width: 727px;
+    height: 521px;
+    top: 165px;
+    left: 35px;
+  }
+
+  .clothes__link-other {
+    margin-top: 120px;
+  }
+}
+
+
+@media (max-width: 1112px) {
+/*1*/
+  .collection {
+    height: 753px;
+  }
+  .collection__image {
+    width: 509px;
+    height: 522px;
+    background-position-y: -165px;
+  }
+  .collection__info {
+    margin-left: 20px;
+  }
+  .info-collection__title {
+    font-size: 70px;
+    margin-left: 0;
+  }
+  .info-collection__link-other {
+    margin-left: 23px;
+  }
+  .collection__social {
+    top: 0;
+  }
+  .collection__scroll {
+    height: 48px;
+    top: -45px;
+  } 
+/*2*/     
+  .look__image-wrap {
+    margin-left: 75px;
+  }
+
+  .look__image_pink {
+    top: 148px;
+    left: 50px;
+    width: 382px;
+    height: 544px;
+  }
+
+  .look__image_grey {
+    top: 269px;
+    width: 298px;
+    height: 315px;
+  }
+
+  .look__info {
+    width: 400px;
+    height: 477px;
+  }
+
+  .info-look__title {
+    margin-left: 28px;
+  }
+
+  .info-look__subtitle {
+    margin: 0 0 28px 28px;
+  }
+
+  .info-look__description {
+    margin: 0 4px 0 24px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .info-look__color {
+    margin: 14px 0 42px 28px;
+  }
+
+  .info-look__price {
+    bottom: 0;
+    margin-left: 27px;
+  }
+
+  .info-look__quantity {
+    margin-left: 24px;
+  }
+
+  .info-look__button {
+    margin-left: 7px;
+    font-size: 13px;
+  }
+
+  .look__link-other {
+    font-size: 12px;
+  }
+/*3*/
+  .clothes__info {
+    right: 35px;
+    width: 432px;
+    height: 340px;
+  }
+
+  .info-clothes__title {
+    margin: 25px 0 15px 27px;
+  }
+
+  .info-clothes__subtitle {
+    margin: 0 0 28px 28px;
+  }
+
+  .info-clothes__description {
+    margin: 0 0 18px 28px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .info-clothes__quantity {
+    margin-left: 28px;
+  }
+
+  .info-clothes__button {
+    font-size: 13px;
+  }
+
+  .clothes__link-other {
+    margin: 112px 39px 0 auto;
+  }  
+}
+
+@media (max-width: 1023px) {
+  .header {
+    background: linear-gradient(to right, #000 301px, #fff 301px);
+  }
+
+  .header__lang {
+    margin-left: 78px;
+  }
+
+  .link {
+    font-size: 9px;
+  }
+/*1*/
+  .collection {
+    height: 543px;
+    background: linear-gradient(to right, #000 301px, #fff 301px);
+  }
+
+  .collection__card {
+    height: 400px;
+  }
+
+  .collection__image {
+    width: 309px;
+    height: 322px;
+    margin-bottom: 45px;
+    background-position-y: -105px;
+    background-position-x: -75px;
+  }
+
+  .collection__info {
+    width: 390px;
+    height: 200px;
+    margin-left: 15px;
+  }
+
+  .info-collection__title {
+    font-size: 60px;
+    line-height: 62px;
+    margin: 0;
+    width: min-content;
+  }
+
+  .info-collection__description {
+    width: 340px;
+    margin: 20px 0 25px 0;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .info-collection__button {
+    width: 133px;
+    height: 34px;
+    font-size: 8px;
+  }
+
+  .collection__social {
+    top: 30px;
+  }
+
+  .collection__scroll {
+    top: -15px;
+  }
+  .clothes__image {
+    width: 577px;
+    height: 501px;
+    top: 172px;
+  }
+
+  .clothes__link-other {
+    margin-top: 125px;
+  }
+ /*3*/
+  .clothes__image {
+    width: 577px;
+    height: 501px;
+    top: 172px;
+  }
+
+  .clothes__link-other {
+    margin-top: 125px;
+  }
+}
+
+@media (max-width: 938px) {
+/*2*/
+  .look__image_pink {
+    left: 0;
+  }
+
+  .look__image_grey {
+    left: -54px;
+  }
+
+  .look__info {
+    margin-right: 30px;
+  }
+
+  .look__link-other {
+    margin-right: 36px;
+  }
+}
+
+@media (max-width: 875px) {
+/*2*/
+  .look__image_grey {
+    display: none;
+  }
+
+  .look__image_pink {
+    top: 106px;
+    left: -65px;
+  }
+
+  .look__info {
+    height: 479px;
+  }
+/*3*/
+  .clothes__image {
+    top: 203px;
+    left: 15px;
+    width: 512px;
+    height: 446px;
+  }
+
+  .clothes__info {
+    top: 266px;
+    right: 15px;
+    width: 418px;
+    height: 316px;
+  }
+
+  .clothes__link-other {
+    margin: 163px 20px 0 auto;
+  }
+}
+
+@media (max-width: 816px) {
+/*2*/
+  .look__image_pink {
+    left: -59px;
+    width: 322px;
+    height: 484px;
+  }
+/*3*/
+  .clothes, .footer {
+    background: linear-gradient(to right, #ebe3d8 288px, #000 288px, #000 361px, #ebe3d8 361px);
+  }
+    
+  .clothes__image {
+    top: 245px;
+    width: 452px;
+    height: 356px;
+  }
+
+  .clothes__link-other {
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: 766px) and (min-width: 585px) {
+.collection__info {
+  position: relative;
+}
+
+.info-collection__title {
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  letter-spacing: 0.39px;
+  padding-top: 50px;
+  left: 95px;
+}
+}
+
+/* моб версия */
+
+@media (max-width: 767px) {
+  .header {
+    background: #fff;
+    height: 69px;
+  }
+
+  .header__logo {
+    margin: 14px 0 0 26px;
+    color: #000;
+  }
+
+  .header__lang {
+    display: none;
+    }
+
+  .header__menu-button {
+    width: 69px;
+    height: 69px;
+  }
+
+  .menu-button__line {
+    width: 26px;
+    height: 3px;
+  }
+
+  .menu-button__line:first-child {
+    margin-bottom: 5px;
+  }
+/*1*/
+  .collection {
+    height: 100vh;
+    background-image: url(./images/model.jpg);
+    background-size: 767px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -100px;
+    background-clip: content-box;
+  }
+
+  .collection__card {
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .collection__info {
+    width: 297px;
+    height: 103px;
+    margin: 0 0 20px 26px;
+  }
+
+  .info-collection__title {
+    width: 297px; 
+    height: 103px;
+    margin: 0;
+    font-size: 50px;
+    line-height: 51px;
+  }
+
+  .info-collection__description, .info-collection__button,
+  .info-collection__link-other, .collection__image, .collection__social {
+    display: none;
+  }
+
+  .collection__scroll {
+    top: 0;
+    margin-bottom: 21px;
+    width: 33px;
+    height: 22px;
+    background-image: url(./images/scroll-mob.svg);
+  }   
+
+/*2*/
+  .look {
+    height: 596px;
+  }
+
+  .look__card {
+    display: flex;
+    height: 596px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+  }
+
+  .look__image-wrap {
+    margin: -63px 0 0 0;
+  }
+    
+  .look__image_pink {
+    position: relative;
+    top: 8px;
+    left: -1px;
+    width: 224px;
+    height: 326px;
+  }
+
+  .look__info {
+    margin: 0;
+    width: 320px;
+    height: 281px;
+    box-shadow: 0 20px 10px -10px rgba(0, 0, 0, 0.1);
+  }
+
+  .info-look__title {
+    width: 192px;
+    height: 23px;
+    margin: 18px 0 2px 29px;
+  }
+    
+  .info-look__subtitle {
+    margin: 0 0 12px 31px;
+  }
+    
+  .info-look__description {
+    width: 252px;
+    height: 84px;
+    margin: 0 0 2px 31px;
+  }
+    
+  .info-look__color {
+    width: 150px;
+    margin: 9px 0 29px 34px;
+    padding-top: 3px;
+  }
+
+  .color__item {
+    width: 23px;
+    height: 23px;
+    margin-right: 9px;
+  }
+
+  .info-look__price {
+    bottom: 5px;
+    margin-left: 33.4px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+    
+  .info-look__button {
+    margin-left: 31px;
+    padding-right: 8px;
+  }
+
+  .look__link-other {
+    display: none;
+  }
+/*3*/
+  .clothes {
+    height: 597px;
+    background: linear-gradient(to right, #ebe3d8 102px, #000 102px, #000 143px, #ebe3d8 143px );
+  }
+
+  .clothes__card {
+    top: 0px;
+    height: 506px;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  .clothes__image {
+    position: relative;
+    width: 351px;
+    height: 261px;
+    top: 34px;
+    left: 0;
+    box-shadow: -10px 15px 20px -10px rgba(0, 0, 0, 0.2);
+  }
+
+  .clothes__info {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 305px;
+    height: 195px;
+    margin: 0 auto 0 auto;
+  }
+    
+  .info-clothes__title {
+   margin: 24px 0 7px 25px;
+  }
+    
+  .info-clothes__subtitle {
+    margin: 0 0 8px 25px;
+  }
+    
+  .info-clothes__description {
+    width: 228px;
+    height: 46px;
+    margin: 0 0 14px 24px;
+  }
+
+  .info-clothes__button {
+    margin-left: 24px;
+    padding: 0 0 2px 0;
+  }
+
+  .clothes__link-other {
+    width: 150px;
+    margin: 0 37px 0 auto;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .clothes__link-other::after {
+    width: 134px;
+    height: 20px;
+    margin-left: 1px;
+    background-image: url(./images/look-arrow-mob.svg);
+  }
+
+  .footer {
+    display: none;
+  }
+  .card-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+    
+  .card-subtitle {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .description {
+    font-size: 9px;
+    line-height: 13px;
+  }
+
+  .button {
+    width: 260px;
+    height: 37px;
+    border: 1px solid #000;
+    font-size: 13px;
+  }
+
+  .quantity {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+ /*1*/ 
+  .collection {
+    max-width: 425px;
+    height: 529px;
+    background-size: 540px;
+    background-position-x: -75px;
+  }
+  .collection__card {
+    height: 529px;
+  }
+/*3*/
+  .clothes__card {
+    top: 0;
+  }
+  .clothes__info{
+    right: -9px;
+    top: 13px;
+  }
+}
+
+@media (max-width: 350px) {
+  /*1*/
+  .collection {
+    background-position-x: -98px;
+  }
+
+  .collection__info {
+    margin-left: 10px;
+  }
+/*2*/
+  .look__info {
+    width: 271px;
+    height: 271px;
+  }
+
+  .info-look__title, .info-look__subtitle, .info-look__description, .info-look__color {
+    margin-left: 11px;
+  }
+
+  .info-look__price {
+    margin-left: 28px;
+  }
+
+  .info-look__button {
+    margin-left: 6px;
+  }
+/*3*/
+  .clothes {
+    background: linear-gradient(to right, #ebe3d8 82px, #000 82px, #000 123px, #ebe3d8 123px);
+  }
+
+  .clothes__image {
+    width: 266px;
+    height: 176px;
+    top: 70px;
+  }
+
+  .clothes__info {
+    right: 0;
+    top: 66px;
+    width: 269px;
+    height: 190px;
+  }
+
+ .info-clothes__button {
+    margin-left: 5px;
+  }
+
+  .clothes__link-other {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 305px) {
+/*1*/  
+  .info-collection__title {
+    width: min-content;
+    font-size: 43px;
+    line-height: 44px;
+  }
+/*3*/  
+  .clothes__link-other {
+    margin-right: 0;
+  }
+}
+
